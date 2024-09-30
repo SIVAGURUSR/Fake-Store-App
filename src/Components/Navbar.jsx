@@ -12,7 +12,7 @@ const Navbar = ({ cartCount, openCart }) => {
             <img src="https://fakestoreapi.com/icons/logo.png" alt="Logo" className="h-10 w-10" /></div>
   
             <h1 className="text-white text-3xl font-bold tracking-wide hover:text-gray-300 transition duration-300">
-              Fake Store
+            E-Commerce
             </h1>
           
 

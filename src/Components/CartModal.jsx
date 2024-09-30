@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faTrashCan, faCircleXmark} from '@fortawesome/free-regular-svg-icons'
 
 const CartModal = ({ cartItems, closeModal, removeFromCart }) => {
   return (
@@ -35,7 +37,7 @@ const CartModal = ({ cartItems, closeModal, removeFromCart }) => {
                 onClick={() => removeFromCart(item.id)}
                 className="mt-4 bg-red-500 text-white py-2 px-4 rounded-xl"
               >
-               Remove 
+               Remove   <FontAwesomeIcon icon={faTrashCan} />
               </button>
               </div>
             ))
@@ -43,7 +45,7 @@ const CartModal = ({ cartItems, closeModal, removeFromCart }) => {
             <p className="text-gray-500 text-center">Your cart is empty.</p>
           )}
            <button onClick={closeModal} className="mt-4 bg-blue-500 text-white py-2 px-4 rounded-xl">
-          Close
+           <FontAwesomeIcon icon={faCircleXmark} /> Close
         </button>
         </div>
        
